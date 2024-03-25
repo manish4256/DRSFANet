@@ -34,12 +34,12 @@ for path in listPaths:
 imgTestArray=np.array(imgTestArray)/255.
 
 noise_level_img = 30             # noise level for noisy image
-lenth=68
+length=68
 sumPSNR=0
 sumSSIM=0
-psnr_val=np.empty(lenth)
-ssim_val=np.empty(lenth)
-for i in range(0,lenth):
+psnr_val=np.empty(length)
+ssim_val=np.empty(length)
+for i in range(0,length):
     np.random.seed(seed=0)  # for reproducibility
     img1=imgTestArray[i]
     f=img1 + np.random.normal(0, noise_level_img/255., img1.shape)
