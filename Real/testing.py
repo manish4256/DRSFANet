@@ -25,7 +25,7 @@ noisy_image_dir = "./Noisy"
 original_image_dir = "./original/"
 
 # Define the path to the output directory for the denoised images
-output_dir = "./results/input/"
+output_dir = "./results/"
 
 # Create the output directory if it doesn't exist
 if not os.path.exists(output_dir):
