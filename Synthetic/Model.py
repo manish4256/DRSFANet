@@ -132,7 +132,7 @@ def ID_Module(input):
     #add=Concatenate()([mul, z])
     #return add
     
-def FLBGDNET():
+def DRSFANet():
 
     input = Input((None, None, 1),name='input')
     eam_1=ID_Module(input)
@@ -144,7 +144,7 @@ def FLBGDNET():
          
 tf.keras.backend.clear_session()
 tf.random.set_seed(6908)
-flbgdnet = FLBGDNET()
+DRSFANet = DRSFANet()
 cleanImages=np.load(config.data)
 print(cleanImages.dtype)
 cleanImages=cleanImages/255.0
@@ -176,11 +176,11 @@ def custom_loss(y_true,y_pred):
     diff=y_true-y_pred
     lp=K.sum(diff*diff)/(2*config.batch_size)
     return lp
-flbgdnet.compile(loss=custom_loss,optimizer=opt)
+DRSFANet.compile(loss=custom_loss,optimizer=opt)
 
 # train
-flbgdnet.fit_generator(myFlow(aug,cleanImages),
+DRSFANet.fit_generator(myFlow(aug,cleanImages),
 epochs=config.epochs,steps_per_epoch=len(cleanImages)//config.batch_size,callbacks=callbacks,verbose=1)
 
 # save the model
-flbgdnet.save('./Pretrained_models/final_new.h5')
+DRSFANet.save('./Pretrained_models/final_new.h5')
