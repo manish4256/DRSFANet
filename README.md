@@ -11,13 +11,13 @@ To test for blind Gray denoising using DRSFANet write:
 
 python Test_gray.py
 
-The resultant images will be stored in 'Test_Results/Gray/'
+The resultant images will be stored in 'results/'
 
 To test for blind Color denoising using DRSFANet write:
 
 python Test_color.py
 
-The resultant images will be stored in 'Test_Results/Color/'
+The resultant images will be stored in 'results/'
 
 Image wise PSNR & SSIM as well as Average PSNR & Average SSIM for the whole image database is also displayed in the console as output.
 
