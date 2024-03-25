@@ -196,4 +196,4 @@ lrScheduler = tf.keras.callbacks.LearningRateScheduler(scheduler)
 train_dataset.shape
 train_dataset.shape
 callbacks = [cp_callback,lrScheduler]
-DRSFANet.fit(test_dataset,train_dataset,batch_size=BATCH_SIZE,shuffle=True,epochs=1000,callbacks=callbacks)
+DRSFANet.fit(test_dataset,train_dataset,batch_size=BATCH_SIZE,shuffle=True,epochs=100,callbacks=callbacks)
