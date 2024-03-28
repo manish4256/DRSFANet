@@ -1,9 +1,6 @@
 # DRSFANet
 This repository contains the code for Deep Residual Feature Extraction and Spatial-Frequency Attention based Image Denoiser.
 
-# DRSFANet
-This repo contains the KERAS implementation of "Blind Gaussian Deep Denoiser Network using Multi-Scale Pixel Attention"
-
 
 # Run Experiments
 
