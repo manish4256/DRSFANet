@@ -18,6 +18,10 @@ To test for blind Color denoising using DRSFANet write:
 
 python Test_colour.py
 
+To test for real denoising using DRSFANet write:
+
+python Testing.py
+
 The resultant images will be stored in 'results/'
 
 Image-wise PSNR & SSIM and Average PSNR & Average SSIM for the whole image database are also displayed in the console as output.
@@ -36,6 +40,13 @@ python DRSFANet_Gray.py
 
 This will save the 'DRSFANET_Gray.h5' file in the folder 'Pretrained_models/'.
 
+# Train DRSFANet real denoising network
+
+To train the DRSFANet real denoising network, first, download the SIDD medium training dataset and divide the images into patches of size 256x256. Then train the model using:
+
+python real.py
+
+This will save the 'DRSFANET.h5' file in the folder 'Pretrained_models/'.
 
 # Train DRSFANet color denoising network
 
