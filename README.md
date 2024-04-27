@@ -40,14 +40,6 @@ python DRSFANet_Gray.py
 
 This will save the 'DRSFANET_Gray.h5' file in the folder 'Pretrained_models/'.
 
-# Train DRSFANet real denoising network
-
-To train the DRSFANet real denoising network, first, download the SIDD medium training dataset and divide the images into patches of size 256x256. Then train the model using:
-
-python real.py
-
-This will save the 'DRSFANET.h5' file in the folder 'Pretrained_models/'.
-
 # Train DRSFANet color denoising network
 
 To train the DRSFANet color denoising network, first, download the [CBSD432 dataset](https://github.com/Magauiya/Extended_SURE/tree/master/Dataset/CBSD432) and save this dataset in the folder named data inside the main folder of this project. Then generate the training data using:
@@ -61,3 +53,11 @@ Then run the DRSFANet model file using:
 python DRSFANet_Color.py
 
 This will save the 'DRSFANET_Color.h5' file in the folder 'Pretrained_models/'.
+
+# Train DRSFANet real denoising network
+
+To train the DRSFANet real denoising network, first, download the SIDD medium training dataset and divide the images into patches of size 256x256. Then train the model using:
+
+python real.py
+
+This will save the 'DRSFANET.h5' file in the folder 'Pretrained_models/'.
