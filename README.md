@@ -24,7 +24,7 @@ Image-wise PSNR & SSIM and Average PSNR & Average SSIM for the whole image datab
 
 # Train DRSFANet gray denoising network
 
-To train the MSPABDN gray denoising network, first download the [BSD400 dataset](https://github.com/smartboy110/denoising-datasets/tree/main/BSD400) and save this dataset inside the main folder of this project. Then generate the training data using:
+To train the MSPABDN gray denoising network, first download the [BSD400 dataset](https://github.com/smartboy110/denoising-datasets/tree/main/BSD400) and save this dataset in the folder named data inside the main folder of this project. Then generate the training data using:
 
 python Generate_Patches_Gray.py
 
@@ -39,9 +39,9 @@ This will save the 'DRSFANet_Gray.h5' file in the folder 'Pretrained_models/'.
 
 # Train DRSFANet color denoising network
 
-To train the DRSFANet color denoising network, first, download the [CBSD432 dataset](https://github.com/Magauiya/Extended_SURE/tree/master/Dataset/CBSD432) and save this dataset inside the main folder of this project. Then generate the training data using:
+To train the DRSFANet color denoising network, first, download the [CBSD432 dataset](https://github.com/Magauiya/Extended_SURE/tree/master/Dataset/CBSD432) and save this dataset in the folder named data inside the main folder of this project. Then generate the training data using:
 
-python Generate_Patches_Colour.py
+python Generate_Patches_Color.py
 
 This will save the training patch 'img_clean_pats.npy' in the folder 'trainingPatch/'
 
