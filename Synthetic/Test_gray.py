@@ -45,7 +45,7 @@ def my_Vfilter(shape, dtype=None):
 #ParsingArguments
 parser=argparse.ArgumentParser()
 parser.add_argument('--dataPath',dest='dataPath',type=str,default='./Testing_data/BSD68/',help='testDataPath')
-parser.add_argument('--weightsPath',dest='weightsPath',type=str,default='./Pretrained_models/itsnew.h5',help='pathOfTrainedCNN')
+parser.add_argument('--weightsPath',dest='weightsPath',type=str,default='./Pretrained_models/DRSFANet_Gray.h5.h5',help='pathOfTrainedCNN')
 args=parser.parse_args()
 #createModel, loadWeights
 def custom_loss(y_true,y_pred): #this is required for loading a keras-model created with custom-loss
@@ -79,7 +79,7 @@ for i in range(0,length):
     predClean=f-np.squeeze(error)
     z=(predClean)
     cv2.imwrite("./results/"+str(i+1)+"_Original.png",255.*img1)
-    cv2.imwrite("./results/"+str(i+1)+"_Proposed.png",255.*z)
+    cv2.imwrite("./results/"+str(i+1)+"_DRSFANet_Gray.png",255.*z)
     cv2.imwrite("./results/"+str(i+1)+"_Noisy.png",255.*f)
     psnr_val[i]=util.calculate_psnr(255.*z,255.*img1)
     ssim_val[i]=util.calculate_ssim(255.*z,255.*img1)
