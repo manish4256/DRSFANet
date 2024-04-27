@@ -48,7 +48,7 @@ for i in range(0,length):
     z=(predClean)
     cv2.imwrite("./results/"+str(i+1)+"_Original.jpg",255.*img1)
     cv2.imwrite("./results/"+str(i+1)+"_Noisy.jpg",255.*f)
-    cv2.imwrite("./results/"+str(i+1)+"_MDFBGDN_colour.jpg",255.*z)
+    cv2.imwrite("./results/"+str(i+1)+"_DRSFANet_Color.jpg",255.*z)
     psnr_val[i]=util.calculate_psnr(255.*z,255.*img1)
     ssim_val[i]=util.calculate_ssim(255.*z,255.*img1)
     print('PSNR of image '+str(i+1)+' is ',psnr_val[i])
