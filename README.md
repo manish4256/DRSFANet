@@ -34,7 +34,7 @@ Then run the DRSFANet model file using:
 
 python DRSFANet_Gray.py
 
-This will save the 'DRSFANet_Gray.h5' file in the folder 'Pretrained_models/'.
+This will save the 'DRSFANET_Gray.h5' file in the folder 'Pretrained_models/'.
 
 
 # Train DRSFANet color denoising network
@@ -49,4 +49,4 @@ Then run the DRSFANet model file using:
 
 python DRSFANet_Color.py
 
-This will save the 'DRSFANet_Color.h5' file in the folder 'Pretrained_models/'.
+This will save the 'DRSFANET_Color.h5' file in the folder 'Pretrained_models/'.
