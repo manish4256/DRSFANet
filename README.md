@@ -16,7 +16,7 @@ The resultant images will be stored in 'results/'
 
 To test for blind Color denoising using DRSFANet write:
 
-python Test_color.py
+python Test_colour.py
 
 The resultant images will be stored in 'results/'
 
@@ -41,7 +41,7 @@ This will save the 'DRSFANet_Gray.h5' file in the folder 'Pretrained_models/'.
 
 To train the DRSFANet color denoising network, first, download the [CBSD432 dataset](https://github.com/Magauiya/Extended_SURE/tree/master/Dataset/CBSD432) and save this dataset inside the main folder of this project. Then generate the training data using:
 
-python Generate_Patches_Color.py
+python Generate_Patches_Colour.py
 
 This will save the training patch 'img_clean_pats.npy' in the folder 'trainingPatch/'
 
