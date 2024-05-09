@@ -25,39 +25,3 @@ python testing.py
 The resultant images will be stored in 'results/'
 
 Image-wise PSNR & SSIM and Average PSNR & Average SSIM for the whole image database are also displayed in the console as output.
-
-# Train DRSFANet gray denoising network
-
-To train the MSPABDN gray denoising network, first download the [BSD400 dataset](https://github.com/smartboy110/denoising-datasets/tree/main/BSD400) and save this dataset in the folder named data inside the main folder of this project. Then generate the training data using:
-
-python Generate_Patches_Gray.py
-
-This will save the training patch 'img_clean_pats.npy' in the folder 'trainingPatch/'
-
-Then run the DRSFANet model file using:
-
-python DRSFANet_Gray.py
-
-This will save the 'DRSFANET_Gray.h5' file in the folder 'Pretrained_models/'.
-
-# Train DRSFANet color denoising network
-
-To train the DRSFANet color denoising network, first, download the [CBSD432 dataset](https://github.com/Magauiya/Extended_SURE/tree/master/Dataset/CBSD432) and save this dataset in the folder named data inside the main folder of this project. Then generate the training data using:
-
-python Generate_Patches_Color.py
-
-This will save the training patch 'img_clean_pats.npy' in the folder 'trainingPatch/'
-
-Then run the DRSFANet model file using:
-
-python DRSFANet_Color.py
-
-This will save the 'DRSFANET_Color.h5' file in the folder 'Pretrained_models/'.
-
-# Train DRSFANet real denoising network
-
-To train the DRSFANet real denoising network, first, download the SIDD medium training dataset and divide the images into patches of size 256x256. Then train the model using:
-
-python real.py
-
-This will save the 'DRSFANET.h5' file in the folder 'Pretrained_models/'.
