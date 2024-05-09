@@ -20,7 +20,7 @@ python Test_colour.py
 
 To test for real denoising using DRSFANet write:
 
-python Testing.py
+python testing.py
 
 The resultant images will be stored in 'results/'
 
